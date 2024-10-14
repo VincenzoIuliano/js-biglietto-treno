@@ -2,9 +2,12 @@
 
 // CHIEDO AL NOSTRO UTENTE DI INSERIRE KM PERCORSI ED ETA 
 
-let expectedKm = parseInt(prompt("Inserisci i Km che prevedi di percorrere nel tuo viaggio"))
-let yourAge = parseInt(prompt("Inserisci la tua Età"))
+const expectedKm = parseInt(prompt("Inserisci i Km che prevedi di percorrere nel tuo viaggio"))
+const yourAge = parseInt(prompt("Inserisci la tua Età"))
 
 console.log(expectedKm , yourAge)
 
-CALCOLO IL 
+// CALCOLO IL PREZZO BASE DEL BIGLIETTO
+
+const basePrice = 0.21 * expectedKm
+console.log ('Il prezzo base del tuo viaggio è di €' + basePrice)
