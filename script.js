@@ -6,3 +6,5 @@ let expectedKm = parseInt(prompt("Inserisci i Km che prevedi di percorrere nel t
 let yourAge = parseInt(prompt("Inserisci la tua Età"))
 
 console.log(expectedKm , yourAge)
+
+CALCOLO IL 
