@@ -9,27 +9,19 @@ console.log(expectedKm , yourAge)
 
 // CALCOLO IL PREZZO BASE DEL BIGLIETTO
 
-const basePrice = 0.21 * expectedKm
+let basePrice = 0.21 * expectedKm
 console.log ('Il prezzo base del tuo viaggio è di €' + basePrice)
 
-// CALCOLO LE VARIE SCONTISTICHE 
-
-let discountTwenty = basePrice * (20 / 100)
-let discountFourty = basePrice * (40 / 100)
-console.log ('Lo sconto se si è minorenni è di €' + discountTwenty + ',' + 'lo sconto se si è over65 è di €' + discountFourty)
-
-// CALCOLO IL PREZZO SCONTATO CHE SI ANDRA' A PAGARE 
-
-let finalPrice = ''
+// RIASSEGNO BASE PRICE, CALCOLANDO GLI SCONTI PER FASCIA D'ETA'
 
 if ( yourAge < 18) {
-    finalPrice = basePrice - discountTwenty
+    let discountTwenty = basePrice * (20 / 100)
+    basePrice = basePrice - discountTwenty
 } else if (yourAge>65) {
-    finalPrice = basePrice - discountFourty
-} else {
-    finalPrice = basePrice
-}
+    let discountFourty = basePrice * (40 / 100)
+    basePrice = basePrice - discountFourty
+} 
 
 // MOSTRO AL NOSTRO UTENTE QUALE PREZZO DOVRA' PAGARE IN BASE ALLA SCONTISTICA SPETTANTE
 
-console.log ('Gentile passeggero, il prezzo finale del tuo biglietto è di €' + finalPrice.toFixed(2) )
+console.log ('Gentile passeggero, il prezzo finale del tuo biglietto è di €' + basePrice.toFixed(2) )
