@@ -30,4 +30,6 @@ if ( yourAge < 18) {
     finalPrice = basePrice
 }
 
+// MOSTRO AL NOSTRO UTENTE QUALE PREZZO DOVRA' PAGARE IN BASE ALLA SCONTISTICA SPETTANTE
+
 console.log ('Gentile passeggero, il prezzo finale del tuo biglietto è di €' + finalPrice.toFixed(2) )
