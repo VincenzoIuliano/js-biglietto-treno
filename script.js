@@ -30,4 +30,4 @@ if ( yourAge < 18) {
     finalPrice = basePrice
 }
 
-console.log ('Gentile passeggero, il prezzo finale del tuo biglietto è di €' + finalPrice)
+console.log ('Gentile passeggero, il prezzo finale del tuo biglietto è di €' + finalPrice.toFixed(2) )
